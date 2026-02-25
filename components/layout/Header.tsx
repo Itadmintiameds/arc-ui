@@ -9,37 +9,47 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
 
-  // 🔥 sticky shrink effect
+  // 🔥 Active checker (parent aware)
+  const isActive = (path: string) => {
+    if (path === "/") return pathname === "/";
+    return pathname.startsWith(path);
+  };
+
+  // 🔥 Sticky effect
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
+    const handleScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // ✅ active link helper
-  const navLinkClass = (path: string) =>
-    `relative group transition-colors duration-300 ${
-      pathname === path
-        ? "text-yellow-300"
-        : "text-white hover:text-yellow-300"
-    }`;
+  // 🔥 Nav style
+  const navStyle = (path: string) =>
+    `relative px-1 py-2 transition-all duration-300
+     ${
+       isActive(path)
+         ? "text-yellow-300"
+         : "text-white/90 hover:text-yellow-300"
+     }
+     after:absolute after:left-0 after:-bottom-1 after:h-[2px]
+     after:w-0 after:bg-yellow-300 after:transition-all after:duration-300
+     hover:after:w-full`;
 
   return (
     <header
-      className={`sticky top-0 z-50 transition-all duration-300 ${
+      className={`sticky top-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-red-700/95 backdrop-blur-md py-2 shadow-xl"
+          ? "bg-red-700/90 backdrop-blur-xl shadow-[0_8px_30px_rgba(0,0,0,0.25)] py-2"
           : "bg-red-600 py-3"
       } text-white`}
     >
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
         
         {/* ✅ Logo */}
-        <Link href="/" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-3 group">
           <img
             src="/images/arclogo.png"
             alt="ARC Sportzone"
-            className="h-12 w-auto"
+            className="h-11 w-auto transition-transform duration-300 group-hover:scale-105"
           />
           <span className="hidden md:block text-lg font-bold tracking-wide leading-none">
             ARC SPORTZONE
@@ -48,52 +58,66 @@ export default function Header() {
 
         {/* ✅ Desktop Nav */}
         <nav className="hidden md:flex gap-8 font-semibold text-sm items-center">
+          
+          <Link href="/" className={navStyle("/")}>HOME</Link>
+          <Link href="/about" className={navStyle("/about")}>ABOUT</Link>
 
-          <Link href="/" className={navLinkClass("/")}>
-            HOME
-            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
-          </Link>
+          {/* 🔥 Sports Dropdown */}
+          <Dropdown title="SPORTS" active={isActive("/sports")}>
+            <DropLink href="/sports/badminton">Badminton</DropLink>
+            <DropLink href="/sports/futsal">Futsal</DropLink>
+            <DropLink href="/sports/aqua">Aqua Zone</DropLink>
+            <DropLink href="/sports/zumba">Zumba</DropLink>
+            <DropLink href="/sports/yoga">Yoga</DropLink>
+            <DropLink href="/sports/table-tennis">Table Tennis</DropLink>
+            <DropLink href="/sports/snooker">Snooker</DropLink>
+            <DropLink href="/sports/box-cricket">Box Cricket</DropLink>
+            <DropLink href="/sports/martial-arts">Martial Arts</DropLink>
+            <DropLink href="/sports/vr-game">VR Game</DropLink>
 
-          <Link href="/about" className={navLinkClass("/about")}>
-            ABOUT
-            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
-          </Link>
+            {/* Submenu */}
+            <div className="relative group/sub">
+              <div className="px-4 py-2 flex justify-between items-center cursor-pointer hover:bg-gray-50">
+                Cross Fitness
+                <span className="text-xs">▶</span>
+              </div>
 
-          <Link href="/sports" className={navLinkClass("/sports")}>
-            SPORTS
-            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
-          </Link>
+              <div className="absolute left-full top-0 ml-2 opacity-0 invisible
+                              group-hover/sub:opacity-100 group-hover/sub:visible
+                              transition-all duration-300">
+                <div className="w-44 bg-white rounded-xl shadow-2xl py-2 border border-gray-100">
+                  <DropLink href="/sports/spa">SPA</DropLink>
+                  <DropLink href="/sports/gym">GYM</DropLink>
+                </div>
+              </div>
+            </div>
+          </Dropdown>
 
-          <Link href="/packages" className={navLinkClass("/packages")}>
-            PACKAGES
-            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
-          </Link>
+          <Dropdown title="PACKAGES" active={isActive("/packages")}>
+            <DropLink href="/packages/regular">Regular Packages</DropLink>
+            <DropLink href="/packages/corporate">Corporate Packages</DropLink>
+          </Dropdown>
 
-          <Link href="/membership" className={navLinkClass("/membership")}>
-            MEMBERSHIP
-            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
-          </Link>
+          <Dropdown title="MEMBERSHIP" active={isActive("/membership")}>
+            <DropLink href="/membership/regular">Regular Membership</DropLink>
+            <DropLink href="/membership/lifetime">Lifetime Membership</DropLink>
+          </Dropdown>
 
-          <Link href="/restaurants" className={navLinkClass("/restaurants")}>
-            RESTAURANTS
-            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
-          </Link>
+          <Dropdown title="RESTAURANTS" active={isActive("/restaurants")}>
+            <DropLink href="/restaurants/goalpost">Goalpost</DropLink>
+            <DropLink href="/restaurants/cockpit">Cockpit</DropLink>
+            <DropLink href="/restaurants/whispering-greens">Whispering Greens</DropLink>
+            <DropLink href="/restaurants/waterfront">Waterfront</DropLink>
+            <DropLink href="/restaurants/take-a-break">Take a Break</DropLink>
+          </Dropdown>
 
-          <Link href="/events" className={navLinkClass("/events")}>
-            EVENTS
-            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
-          </Link>
+          <Link href="/events" className={navStyle("/events")}>EVENTS</Link>
 
-          <Link href="/media" className={navLinkClass("/media")}>
-            MEDIA
-            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
-          </Link>
+          <Dropdown title="MEDIA" active={isActive("/media")}>
+            <DropLink href="/media">Gallery</DropLink>
+          </Dropdown>
 
-          <Link href="/contact" className={navLinkClass("/contact")}>
-            CONTACT
-            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
-          </Link>
-
+          <Link href="/contact" className={navStyle("/contact")}>CONTACT</Link>
         </nav>
 
         {/* ✅ Mobile button */}
@@ -105,22 +129,68 @@ export default function Header() {
         </button>
       </div>
 
-      {/* ✅ Mobile menu */}
+      {/* ✅ Mobile Menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-red-700 px-4 pb-4 pt-2 space-y-3 font-semibold animate-in slide-in-from-top duration-200">
-
-          <Link href="/" className="block hover:text-yellow-300">HOME</Link>
-          <Link href="/about" className="block hover:text-yellow-300">ABOUT</Link>
-          <Link href="/sports" className="block hover:text-yellow-300">SPORTS</Link>
-          <Link href="/packages" className="block hover:text-yellow-300">PACKAGES</Link>
-          <Link href="/membership" className="block hover:text-yellow-300">MEMBERSHIP</Link>
-          <Link href="/restaurants" className="block hover:text-yellow-300">RESTAURANTS</Link>
-          <Link href="/events" className="block hover:text-yellow-300">EVENTS</Link>
-          <Link href="/media" className="block hover:text-yellow-300">MEDIA</Link>
-          <Link href="/contact" className="block hover:text-yellow-300">CONTACT</Link>
-
+        <div className="md:hidden bg-red-700 px-4 pb-4 pt-2 space-y-3 font-semibold">
+          <Link href="/" className="block">HOME</Link>
+          <Link href="/about" className="block">ABOUT</Link>
+          <Link href="/sports" className="block">SPORTS</Link>
+          <Link href="/packages" className="block">PACKAGES</Link>
+          <Link href="/membership" className="block">MEMBERSHIP</Link>
+          <Link href="/restaurants" className="block">RESTAURANTS</Link>
+          <Link href="/events" className="block">EVENTS</Link>
+          <Link href="/media" className="block">MEDIA</Link>
+          <Link href="/contact" className="block">CONTACT</Link>
         </div>
       )}
     </header>
+  );
+}
+
+/* ===================================================== */
+/* 🔥 PREMIUM DROPDOWN */
+/* ===================================================== */
+
+function Dropdown({ title, children, active }: any) {
+  return (
+    <div className="relative group">
+      <span
+        className={`cursor-pointer flex items-center gap-1 transition-colors duration-300
+        ${active ? "text-yellow-300" : "text-white/90 hover:text-yellow-300"}`}
+      >
+        {title}
+        <span className="text-[10px] mt-[2px]">▾</span>
+      </span>
+
+      <div
+        className="absolute left-0 top-full pt-4 opacity-0 invisible
+                   group-hover:opacity-100 group-hover:visible
+                   transition-all duration-300"
+      >
+        <div
+          className="w-60 bg-white/95 backdrop-blur-xl text-gray-800
+                     rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.18)]
+                     py-2 border border-gray-100"
+        >
+          {children}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ===================================================== */
+/* 🔥 DROPLINK */
+/* ===================================================== */
+
+function DropLink({ href, children }: any) {
+  return (
+    <Link
+      href={href}
+      className="block px-5 py-2.5 text-sm hover:bg-gray-50
+                 hover:text-red-600 transition-all duration-200"
+    >
+      {children}
+    </Link>
   );
 }

@@ -11,7 +11,6 @@ const mediaItems = [
   { type: "video", src: "/media/media5.mp4", thumbnail: "/media/thumb5.jpg" },
   { type: "image", src: "/media/media6.jpg" },
 ];
-
 export default function MediaPage() {
   return (
     <main className="bg-gradient-to-b from-[#f8fafc] via-white to-[#f1f5f9] min-h-screen">
