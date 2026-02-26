@@ -15,12 +15,20 @@ export default function Header() {
     return pathname.startsWith(path);
   };
 
+  // ✅ close mobile helper
+  const closeMobileMenu = () => setMobileOpen(false);
+
   // 🔥 Sticky effect
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // ✅ PRO: auto-close on route change
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [pathname]);
 
   // 🔥 Nav style
   const navStyle = (path: string) =>
@@ -62,7 +70,6 @@ export default function Header() {
           <Link href="/" className={navStyle("/")}>HOME</Link>
           <Link href="/about" className={navStyle("/about")}>ABOUT</Link>
 
-          {/* 🔥 Sports Dropdown */}
           <Dropdown title="SPORTS" active={isActive("/sports")}>
             <DropLink href="/sports/badminton">Badminton</DropLink>
             <DropLink href="/sports/futsal">Futsal</DropLink>
@@ -75,7 +82,6 @@ export default function Header() {
             <DropLink href="/sports/martial-arts">Martial Arts</DropLink>
             <DropLink href="/sports/vr-game">VR Game</DropLink>
 
-            {/* Submenu */}
             <div className="relative group/sub">
               <div className="px-4 py-2 flex justify-between items-center cursor-pointer hover:bg-gray-50">
                 Cross Fitness
@@ -132,15 +138,15 @@ export default function Header() {
       {/* ✅ Mobile Menu */}
       {mobileOpen && (
         <div className="md:hidden bg-red-700 px-4 pb-4 pt-2 space-y-3 font-semibold">
-          <Link href="/" className="block">HOME</Link>
-          <Link href="/about" className="block">ABOUT</Link>
-          <Link href="/sports" className="block">SPORTS</Link>
-          <Link href="/packages" className="block">PACKAGES</Link>
-          <Link href="/membership" className="block">MEMBERSHIP</Link>
-          <Link href="/restaurants" className="block">RESTAURANTS</Link>
-          <Link href="/events" className="block">EVENTS</Link>
-          <Link href="/media" className="block">MEDIA</Link>
-          <Link href="/contact" className="block">CONTACT</Link>
+          <Link href="/" className="block" onClick={closeMobileMenu}>HOME</Link>
+          <Link href="/about" className="block" onClick={closeMobileMenu}>ABOUT</Link>
+          <Link href="/sports" className="block" onClick={closeMobileMenu}>SPORTS</Link>
+          <Link href="/packages" className="block" onClick={closeMobileMenu}>PACKAGES</Link>
+          <Link href="/membership" className="block" onClick={closeMobileMenu}>MEMBERSHIP</Link>
+          <Link href="/restaurants" className="block" onClick={closeMobileMenu}>RESTAURANTS</Link>
+          <Link href="/events" className="block" onClick={closeMobileMenu}>EVENTS</Link>
+          <Link href="/media" className="block" onClick={closeMobileMenu}>MEDIA</Link>
+          <Link href="/contact" className="block" onClick={closeMobileMenu}>CONTACT</Link>
         </div>
       )}
     </header>
