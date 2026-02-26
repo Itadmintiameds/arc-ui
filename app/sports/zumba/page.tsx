@@ -8,7 +8,7 @@ export default function ZumbaPage() {
       {/* ===== HERO ===== */}
 <section className="relative min-h-[320px] md:min-h-[420px] w-full overflow-hidden flex items-center justify-center">
   <Image
-    src="/images/hero4.jpeg"
+    src="/images/membership/zumba.jpg"
     alt="Badminton"
     fill
     priority
@@ -79,7 +79,7 @@ export default function ZumbaPage() {
 
           <div className="relative h-[340px] w-full rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/img/college-event.jpg"
+              src="/images/membership/zumba.jpg"
               alt="Zumba session"
               fill
               className="object-cover"

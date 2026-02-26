@@ -7,7 +7,7 @@ export default function ContactPage() {
       {/* ===== Hero Banner ===== */}
       <section className="relative h-[260px] md:h-[320px] flex items-center justify-center overflow-hidden">
         <img
-          src="/images/conetact-us.jpg"
+          src="/images/hero2.jpeg"
           alt="Contact ARC Sportzone"
           className="absolute inset-0 w-full h-full object-cover"
         />

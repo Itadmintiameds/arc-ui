@@ -3,16 +3,16 @@ import Link from "next/link";
 
 const packages = [
   {
-    title: "Corporate Events",
-    image: "/images/corporate-team-event.jpg",
+    title: "Birthdays",
+    image: "/images/birthdays.jpg",
   },
   {
-    title: "School / College Events",
-    image: "/images/events.jpg",
+    title: "Family Events",
+    image: "/images/family-events.jpg",
   },
   {
-    title: "Tournament",
-    image: "/images/tournament.jpg",
+    title: "Community Events",
+    image: "/images/community-events.jpg",
   },
 ];
 
