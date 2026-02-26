@@ -37,7 +37,7 @@ export default function HeroSlider() {
               <img
                 src={src}
                 alt={`slide-${i}`}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
 
               {/* Overlay */}
