@@ -9,40 +9,41 @@ import SportsShowcase from "@/components/SportsShowcase";
 export default function AboutPage() {
   return (
     <main className="bg-white overflow-x-hidden">
-
       {/* ===== HERO ===== */}
-      <section className="relative h-[280px] md:h-[360px] overflow-hidden flex items-center justify-center">
+<section className="relative min-h-[320px] md:min-h-[420px] w-full overflow-hidden flex items-center justify-center">
+  
+  {/* Background Image */}
+  <Image
+    src="/images/about-banner.jpeg"
+    alt="About ARC Sportzone"
+    fill
+    priority
+    sizes="100vw"
+    className="object-cover"
+  />
 
-        <Image
-          src="/images/about-banner.jpg"
-          alt="About ARC Sportzone"
-          fill
-          priority
-          className="object-cover scale-105"
-        />
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/60 to-black/75" />
 
-        {/* premium gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/60 to-black/75" />
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="relative z-10 text-center px-4"
-        >
-          <h1 className="text-3xl md:text-5xl font-bold text-[#E7E2D8] tracking-wide drop-shadow-lg">
-            About ARC Sportzone
-          </h1>
-          <p className="text-[#D6D1C7] mt-3 max-w-xl mx-auto">
-            Mysuru’s premier destination for sports, fitness and excellence
-          </p>
-        </motion.div>
-      </section>
+  {/* Content */}
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6 }}
+    className="relative z-10 text-center px-4 py-16"
+  >
+    <h1 className="text-3xl md:text-5xl font-bold text-[#E7E2D8] tracking-wide drop-shadow-lg">
+      About ARC Sportzone
+    </h1>
+    <p className="text-[#D6D1C7] mt-3 max-w-xl mx-auto">
+      Mysuru’s premier destination for sports, fitness and excellence
+    </p>
+  </motion.div>
+</section>
 
       {/* ===== INTRO SECTION ===== */}
       <section className="py-24 bg-gradient-to-b from-white to-slate-50">
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-14 items-center">
-
           {/* LEFT — TEXT */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -95,34 +96,32 @@ export default function AboutPage() {
               </video>
             </div>
           </motion.div>
-
         </div>
       </section>
 
-      {/* ===== STATS (PREMIUM TRUST STRIP) ===== */}
+      {/* ===== STATS ===== */}
       <Stats />
 
       {/* ===== VISION & MISSION ===== */}
-      <section className="py-28 relative overflow-hidden">
-
-        {/* background image */}
-        <Image
-          src="/images/sports-bg2.jpg"
-          alt="ARC Vision Background"
-          fill
-          className="object-cover"
-        />
+      <section className="relative py-28 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/sports-bg2.jpg"
+            alt="ARC Vision Background"
+            fill
+            sizes="100vw"
+            className="object-cover"
+          />
+        </div>
 
         <div className="absolute inset-0 bg-black/70" />
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 text-center text-[#E7E2D8]">
-
           <h2 className="text-3xl md:text-4xl font-bold mb-14">
             Our Vision & Mission
           </h2>
 
           <div className="grid md:grid-cols-2 gap-10">
-
             {/* Vision Card */}
             <motion.div
               initial={{ opacity: 0, y: 40 }}
@@ -157,14 +156,12 @@ export default function AboutPage() {
                 builds character, teamwork, and resilience.
               </p>
             </motion.div>
-
           </div>
         </div>
       </section>
 
       {/* ===== FACILITIES ===== */}
       <SportsShowcase />
-
     </main>
   );
 }

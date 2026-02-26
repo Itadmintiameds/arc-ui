@@ -1,21 +1,17 @@
-// app/restaurants/take-a-break/page.tsx
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
-export const metadata = {
-  title: "Take A Break | ARC Sportzone",
-  description:
-    "Relax and refresh at Take A Break by ARC Sportzone. Enjoy snacks, juices, and quick bites after your sports session.",
-};
-
-export default function TakeABreakPage() {
+export default function GoalPostPage() {
   return (
-    <main className="bg-gradient-to-b from-[#f8fafc] via-white to-[#f1f5f9]">
+    <main className="bg-white overflow-x-hidden">
       {/* ===== HERO ===== */}
-      <section className="relative h-[260px] md:h-[340px] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[320px] md:min-h-[420px] w-full overflow-hidden flex items-center justify-center">
         <Image
           src="/img/new-banners/goalpost.jpg"
-          alt="Take A Break restaurant at ARC Sportzone"
+          alt="Goalpost"
           fill
           priority
           sizes="100vw"
@@ -24,104 +20,96 @@ export default function TakeABreakPage() {
 
         <div className="absolute inset-0 bg-black/60" />
 
-        <div className="relative z-10 text-center px-4">
+        <div className="relative z-10 text-center px-4 py-16">
           <h1 className="text-3xl md:text-5xl font-bold text-[#E7E2D8] tracking-wide">
-            Take A Break
+            Goalpost
           </h1>
 
-          <nav className="mt-3 text-sm text-gray-200">
-            <Link href="/" className="hover:text-white">
+          <div className="mt-3 text-sm text-gray-200">
+            <Link href="/" className="hover:text-white transition">
               Home
             </Link>
             <span className="mx-2">/</span>
-            <Link href="/restaurants" className="hover:text-white">
+            <Link href="/restaurants" className="hover:text-white transition">
               Restaurants
             </Link>
             <span className="mx-2">/</span>
-            <span className="text-[#E7E2D8] font-medium">
-              Take A Break
-            </span>
-          </nav>
-        </div>
-      </section>
-
-      {/* ===== INTRO ===== */}
-      <section className="py-16 md:py-20">
-        <div className="max-w-5xl mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Take A Break
-          </h2>
-
-          <p className="text-lg text-gray-700 leading-relaxed">
-            Sometimes you just want to relax with a cool beverage or a tasty
-            snack after a long day or an intense sports session. From breakfast
-            and sandwiches to chats, fresh juices, and ice creams —
-            <span className="font-semibold text-gray-900">
-              {" "}Take A Break by ARC Sportzone{" "}
-            </span>
-            is the perfect spot to refresh and recharge.
-          </p>
-
-          <p className="text-lg text-gray-600 leading-relaxed mt-4">
-            Chill out, relax, catch up with friends, or even hop on a quick
-            meeting while your kids finish their coaching sessions. We’re open
-            all week and ready to serve you.
-          </p>
-        </div>
-      </section>
-
-      {/* ===== GALLERY ===== */}
-      <section className="pb-20">
-        <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8">
-          <div className="relative h-[260px] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
-            <Image
-              src="/img/new-image/t1.jpg"
-              alt="Snacks at Take A Break"
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover hover:scale-105 transition duration-700"
-            />
-          </div>
-
-          <div className="relative h-[260px] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
-            <Image
-              src="/img/new-image/t2.jpg"
-              alt="Beverages at Take A Break"
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover hover:scale-105 transition duration-700"
-            />
+            <span className="text-[#E7E2D8] font-medium">Goalpost</span>
           </div>
         </div>
       </section>
 
-      {/* ===== MENU ===== */}
-      <section className="pb-24">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-            Menu
-          </h2>
+      {/* ===== CONTENT ===== */}
+      <section className="py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-4">
+          {/* Title */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-center max-w-4xl mx-auto mb-14"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              Goal Post
+            </h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="relative h-[420px] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
-              <Image
-                src="/img/new-image/t-1.jpg"
-                alt="Take A Break menu page 1"
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-contain bg-white"
-              />
-            </div>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Goal Post is ARC Sportzone's very own custom themed sports bar.
+              As the name suggests, Goal Post has been beautifully themed after
+              the sport that the whole world loves — Football! Everything from
+              the floor to the tables to the beanbags makes you feel like you
+              are in the football field with your mates having the time of your
+              life.
+            </p>
 
-            <div className="relative h-[420px] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
-              <Image
-                src="/img/new-image/t-2.jpg"
-                alt="Take A Break menu page 2"
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-contain bg-white"
-              />
-            </div>
+            <p className="text-gray-600 leading-relaxed">
+              Come visit Goal Post by ARC Sportzone — we guarantee you will get
+              those cool pub vibes here with the best food and music! Kick your
+              troubles away and reach your weekend goals at Goal Post. We are
+              open all week!
+            </p>
+          </motion.div>
+
+          {/* ===== IMAGE GRID ===== */}
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              "/img/new-image/c1.jpg",
+              "/img/new-image/c2.jpg",
+              "/img/new-image/c3.jpg",
+            ].map((src, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="group relative overflow-hidden rounded-2xl shadow-lg"
+              >
+                <div className="relative h-[260px] w-full">
+                  <Image
+                    src={src}
+                    alt={`Goalpost ${i + 1}`}
+                    fill
+                    sizes="(max-width:768px) 100vw, 33vw"
+                    className="object-cover group-hover:scale-105 transition duration-500"
+                  />
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* ===== MENU BUTTON ===== */}
+          <div className="text-center mt-12">
+            <Link
+              href="/img/new-image/GoalPost(Football)menu_Final.pdf"
+              target="_blank"
+              className="inline-block bg-[#0b1b34] hover:bg-[#132a52] text-white
+                         px-8 py-3 rounded-full font-semibold
+                         shadow-lg transition"
+            >
+              View Menu
+            </Link>
           </div>
         </div>
       </section>

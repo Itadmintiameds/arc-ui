@@ -9,13 +9,13 @@ import "swiper/css/navigation";
 
 const slides = [
   "/images/hero1.png",
-  "/images/hero2.jpg",
-  "/images/hero3.jpg",
-  "/images/hero4.jpg",
-  "/images/hero5.jpg",
+  "/images/hero2.jpeg",
+  "/images/hero3.jpeg",
+  "/images/hero4.jpeg",
+  "/images/hero5.jpeg",
   "/images/hero6.jpeg",
-  "/images/hero7.png",
-  "/images/hero8.jpg",
+  "/images/hero7.jpeg",
+  "/images/hero8.jpeg",
 ];
 
 export default function HeroSlider() {

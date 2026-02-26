@@ -6,37 +6,38 @@ export default function TableTennisPage() {
   return (
     <main className="bg-gradient-to-b from-[#f8fafc] via-white to-[#f1f5f9]">
       {/* ===== HERO ===== */}
-      <section className="relative h-[260px] md:h-[340px] flex items-center justify-center overflow-hidden">
-        <Image
-          src="/img/new-image/ta2.jpg"
-          alt="Table Tennis"
-          fill
-          priority
-          className="object-cover"
-        />
+<section className="relative min-h-[320px] md:min-h-[420px] w-full overflow-hidden flex items-center justify-center">
+  <Image
+    src="/images/hero7.jpeg"
+    alt="Badminton"
+    fill
+    priority
+    sizes="100vw"
+    className="object-cover"
+  />
 
-        <div className="absolute inset-0 bg-black/60" />
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/60" />
 
-        <div className="relative z-10 text-center px-4">
-          <h1 className="text-3xl md:text-5xl font-bold text-[#E7E2D8] tracking-wide">
-            Table Tennis
-          </h1>
+  {/* Content */}
+  <div className="relative z-10 text-center px-4 py-16">
+    <h1 className="text-3xl md:text-5xl font-bold text-[#E7E2D8] tracking-wide">
+      Table Tennis
+    </h1>
 
-          <div className="mt-3 text-sm text-gray-200">
-            <Link href="/" className="hover:text-white">
-              Home
-            </Link>
-            <span className="mx-2">/</span>
-            <Link href="/sports" className="hover:text-white">
-              Sports
-            </Link>
-            <span className="mx-2">/</span>
-            <span className="text-[#E7E2D8] font-medium">
-              Table Tennis
-            </span>
-          </div>
-        </div>
-      </section>
+    <div className="mt-3 text-sm text-gray-200">
+      <Link href="/" className="hover:text-white transition">
+        Home
+      </Link>
+      <span className="mx-2">/</span>
+      <Link href="/sports" className="hover:text-white transition">
+        Sports
+      </Link>
+      <span className="mx-2">/</span>
+      <span className="text-[#E7E2D8] font-medium">Table Tennis</span>
+    </div>
+  </div>
+</section>
 
       {/* ===== INTRO ===== */}
       <section className="py-16 md:py-20">

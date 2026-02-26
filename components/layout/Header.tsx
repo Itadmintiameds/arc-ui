@@ -117,7 +117,7 @@ export default function Header() {
             <DropLink href="/restaurants/take-a-break">Take a Break</DropLink>
           </Dropdown>
 
-          <Link href="/events" className={navStyle("/events")}>EVENTS</Link>
+          <Link href="/events/summer-camp" className={navStyle("/events")}>EVENTS</Link>
 
           <Dropdown title="MEDIA" active={isActive("/media")}>
             <DropLink href="/media">Gallery</DropLink>

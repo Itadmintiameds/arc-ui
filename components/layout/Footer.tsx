@@ -85,14 +85,14 @@ export default function Footer() {
               className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition"
             >
               <Instagram size={18} />
-            </Link>
+            </Link>     
 
             <Link
               href="https://www.youtube.com/@OfficialARCSportzone"
               target="_blank"
               className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition"
             >
-              <Youtube size={18} />
+              <Youtube size={18} /> 
             </Link>
           </div>
         </div>
