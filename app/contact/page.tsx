@@ -5,33 +5,36 @@ export default function ContactPage() {
     <main className="bg-white">
 
       {/* ===== Hero Banner ===== */}
-      <section className="relative h-[260px] md:h-[320px] flex items-center justify-center overflow-hidden">
-        <img
-          src="/images/hero2.jpeg"
-          alt="Contact ARC Sportzone"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
+<section className="relative w-full overflow-hidden">
+  <img
+    src="/images/hero2.jpeg"
+    alt="Contact ARC Sportzone"
+    className="w-full h-auto object-contain"
+  />
 
-        <div className="absolute inset-0 bg-black/60" />
+  <div className="absolute inset-0 bg-black/60" />
 
-        <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-3xl md:text-5xl font-bold tracking-wide">
-            Contact ARC Sportzone
-          </h1>
-          <div className="text-gray-200 mt-3 space-y-4">
-  <p>We’d love to hear from you</p>
+  <div className="absolute inset-0 z-10 flex items-center justify-center text-center text-white px-4">
+    <div>
+      <h1 className="text-3xl md:text-5xl font-bold tracking-wide">
+        Contact ARC Sportzone
+      </h1>
 
-  <a
-    href="https://forms.gle/YOUR_GOOGLE_FORM_LINK"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300 shadow-lg hover:shadow-2xl"
-  >
-    Enquire Now
-  </a>
-</div>
-        </div>
-      </section>
+      <div className="text-gray-200 mt-3 space-y-4">
+        <p>We’d love to hear from you</p>
+
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLScQxrM-uxOqf8uxelqdc84NKQg-drGyXxIuHYz_cqcj-gV72Q/viewform?usp=sharing&ouid=107011122501195333913"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300 shadow-lg hover:shadow-2xl"
+        >
+          Enquire Now
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* ===== Contact Info ===== */}
       <section className="py-16 bg-gradient-to-b from-slate-50 to-white">

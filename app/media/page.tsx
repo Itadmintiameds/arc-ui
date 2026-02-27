@@ -4,12 +4,13 @@ import Image from "next/image";
 import { Play } from "lucide-react";
 
 const mediaItems = [
-  { type: "image", src: "/media/media1.jpg" },
-  { type: "video", src: "/media/media2.mp4", thumbnail: "/media/thumb2.jpg" },
-  { type: "image", src: "/media/media3.jpg" },
-  { type: "image", src: "/media/media4.jpg" },
-  { type: "video", src: "/media/media5.mp4", thumbnail: "/media/thumb5.jpg" },
-  { type: "image", src: "/media/media6.jpg" },
+  { type: "image", src: "/images/media1.jpg" },
+  // { type: "video", src: "/media/media2.mp4", thumbnail: "/media/thumb2.jpg" },
+  // { type: "image", src: "/media/media2.jpg" },
+  { type: "image", src: "/images/media2.jpg" },
+  { type: "image", src: "/images/media3.jpg" },
+  { type: "image", src: "/images/media4.jpg" },
+  
 ];
 export default function MediaPage() {
   return (
