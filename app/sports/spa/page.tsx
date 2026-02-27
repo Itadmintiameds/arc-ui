@@ -8,7 +8,7 @@ export default function SpaPage() {
       {/* ===== HERO ===== */}
 <section className="relative min-h-[320px] md:min-h-[420px] w-full overflow-hidden flex items-center justify-center">
   <Image
-    src="/images/hero4.jpeg"
+    src="/images/spa.jpg"
     alt="Badminton"
     fill
     priority

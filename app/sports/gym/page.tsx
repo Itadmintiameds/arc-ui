@@ -72,7 +72,7 @@ export default function GymPage() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="relative h-[260px] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
               <Image
-                src="/images/strong-athlete-lifting-barbell-exercising-gym.jpg"
+                src="/images/gym1.jpg"
                 alt="Strength training"
                 fill
                 className="object-cover hover:scale-105 transition duration-700"
@@ -81,7 +81,7 @@ export default function GymPage() {
 
             <div className="relative h-[260px] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
               <Image
-                src="/images/gym-fitness-woman-working-gym-exercises-workout-fit-gym.jpg"
+                src="/images/gym2.jpg"
                 alt="Gym workout"
                 fill
                 className="object-cover hover:scale-105 transition duration-700"
@@ -90,7 +90,7 @@ export default function GymPage() {
 
             <div className="relative h-[260px] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
               <Image
-                src="/images/man-working-out-gym.jpg"
+                src="/images/gym3.png"
                 alt="Fitness training"
                 fill
                 className="object-cover hover:scale-105 transition duration-700"

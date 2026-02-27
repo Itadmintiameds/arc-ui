@@ -8,7 +8,7 @@ export default function ZumbaPage() {
       {/* ===== HERO ===== */}
 <section className="relative min-h-[320px] md:min-h-[420px] w-full overflow-hidden flex items-center justify-center">
   <Image
-    src="/images/membership/zumba.jpg"
+    src="/images/zumba2.jpg"
     alt="Badminton"
     fill
     priority

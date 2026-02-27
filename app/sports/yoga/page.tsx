@@ -8,7 +8,7 @@ export default function YogaPage() {
       {/* ===== HERO ===== */}
 <section className="relative min-h-[320px] md:min-h-[420px] w-full overflow-hidden flex items-center justify-center">
   <Image
-    src="/images/hero4.jpeg"
+    src="/images/yoga.jpg"
     alt="Badminton"
     fill
     priority
@@ -22,7 +22,7 @@ export default function YogaPage() {
   {/* Content */}
   <div className="relative z-10 text-center px-4 py-16">
     <h1 className="text-3xl md:text-5xl font-bold text-[#E7E2D8] tracking-wide">
-      Badminton
+      Yoga
     </h1>
 
     <div className="mt-3 text-sm text-gray-200">
@@ -79,7 +79,7 @@ export default function YogaPage() {
 
           <div className="relative h-[360px] w-full rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/img/new-imgs/yoga-trainer.jpg"
+              src="/images/yoga-trainer.jpg"
               alt="Yoga trainer"
               fill
               className="object-cover"
