@@ -51,7 +51,7 @@ export default function MediaPage() {
                 {item.type === "video" && (
                   <>
                     <Image
-                      src={item.thumbnail!}
+                      src=""
                       alt="ARC Video"
                       fill
                       className="object-cover group-hover:scale-110 transition duration-500"
