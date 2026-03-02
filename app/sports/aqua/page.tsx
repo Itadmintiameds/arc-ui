@@ -120,7 +120,7 @@ export default function AquaZonePage() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
               <div className="relative h-[260px]">
                 <Image
-                  src="/img/Sajan-Prakash.png"
+                  src="/images/sajan-prakash.jpg"
                   alt="Sajan Prakash"
                   fill
                   className="object-cover"
@@ -139,7 +139,7 @@ export default function AquaZonePage() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
               <div className="relative h-[260px]">
                 <Image
-                  src="/img/Shikha-Tandon.jpg"
+                  src="/images/shikha-tandon.jpg"
                   alt="Shikha Tandon"
                   fill
                   className="object-cover"

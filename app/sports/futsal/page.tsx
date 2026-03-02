@@ -75,7 +75,7 @@ export default function FutsalPage() {
 
           <div className="relative h-[340px] w-full rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/img/futsal.jpg"
+              src="/images/futsal.jpg"
               alt="Futsal turf"
               fill
               className="object-cover"
@@ -136,7 +136,7 @@ export default function FutsalPage() {
 
           <div className="relative h-[320px] w-full rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/img/futsal5.jpg"
+              src="/images/futsal1.jpg"
               alt="Futsal match"
               fill
               className="object-cover"

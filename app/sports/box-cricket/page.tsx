@@ -76,7 +76,7 @@ export default function BoxCricketPage() {
 
           <div className="relative h-[340px] w-full rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/images/cricketer-field-action.jpg"
+              src="/images/boxc.jpg"
               alt="Box cricket ground"
               fill
               className="object-cover"

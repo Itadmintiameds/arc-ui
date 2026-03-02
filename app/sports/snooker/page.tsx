@@ -73,7 +73,7 @@ export default function SnookerPage() {
 
           <div className="relative h-[340px] w-full rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/img/new-imgs/snookers.jpg"
+              src="/images/snooker.jpg"
               alt="Snooker table"
               fill
               className="object-cover"

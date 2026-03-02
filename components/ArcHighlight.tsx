@@ -8,7 +8,7 @@ export default function ArcHighlight() {
       
       {/* Background Image (sharp, optimized) */}
       <Image
-        src="/images/arc-bg.jpg"
+        src="/images/about-banner.jpeg"
         alt="ARC Sportzone"
         fill
         priority

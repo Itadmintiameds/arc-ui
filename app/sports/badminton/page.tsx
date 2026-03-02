@@ -137,17 +137,17 @@ export default function BadmintonPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                img: "/img/srikanth.jpg",
+                img: "/images/Srikanth1.jpg",
                 text:
                   "Srikanth Kidambi is the highest ranked men's singles badminton player in the world and a Padma Shri awardee.",
               },
               {
-                img: "/img/Saina-Nehwal.jpg",
+                img: "/images/Saina-Nehwal.jpg",
                 text:
                   "Former world No.1 Saina Nehwal has bagged multiple Superseries titles across world championships.",
               },
               {
-                img: "/img/PV-Sindhu.jpg",
+                img: "/images/pv-sindhu.jpg",
                 text:
                   "P V Sindhu, Olympic medalist and World Champion, has won medals at numerous BWF tournaments.",
               },

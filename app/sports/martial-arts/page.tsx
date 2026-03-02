@@ -8,7 +8,7 @@ export default function MartialArtsPage() {
       {/* ===== HERO ===== */}
 <section className="relative min-h-[320px] md:min-h-[420px] w-full overflow-hidden flex items-center justify-center">
   <Image
-    src="/images/vr.jpg"
+    src="/images/martial-a-banner.webp"
     alt="Badminton"
     fill
     priority
@@ -86,7 +86,7 @@ export default function MartialArtsPage() {
           <div className="grid md:grid-cols-2 gap-8 mb-10">
             <div className="relative h-[300px] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
               <Image
-                src="/img/new-image/m1.jpg"
+                src="/images/martial-art.webp"
                 alt="Martial arts training"
                 fill
                 className="object-cover hover:scale-105 transition duration-700"
@@ -95,7 +95,7 @@ export default function MartialArtsPage() {
 
             <div className="relative h-[300px] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
               <Image
-                src="/img/new-image/m2.jpg"
+                src="/images/kung-fu.jpg"
                 alt="Kung Fu practice"
                 fill
                 className="object-cover hover:scale-105 transition duration-700"
@@ -107,7 +107,7 @@ export default function MartialArtsPage() {
           <div className="flex justify-center">
             <div className="relative h-[340px] w-full md:w-2/3 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
               <Image
-                src="/img/new-image/m-1.jpg"
+                src="/images/martial-arts2.jpg"
                 alt="Martial arts session"
                 fill
                 className="object-cover hover:scale-105 transition duration-700"

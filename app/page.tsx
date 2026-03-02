@@ -2,6 +2,7 @@ import HeroSlider from "@/components/HeroSlider";
 import SportsShowcase from "@/components/SportsShowcase";
 import ArcHighlight from "@/components/ArcHighlight";
 import Testimonials from "@/components/Testimonials";
+import EventsPage from "./events/summer-camp/page";
 
 export default function HomePage() {
   return (
@@ -9,6 +10,7 @@ export default function HomePage() {
       <HeroSlider />
       <SportsShowcase />
       <ArcHighlight />
+      <EventsPage/>
       <Testimonials />
     </main>
   );

@@ -81,7 +81,7 @@ export default function TableTennisPage() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="relative h-[300px] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
               <Image
-                src="/img/new-image/ta1.jpg"
+                src="/images/tt1.jpg"
                 alt="Table tennis match"
                 fill
                 className="object-cover hover:scale-105 transition duration-700"
@@ -90,7 +90,7 @@ export default function TableTennisPage() {
 
             <div className="relative h-[300px] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
               <Image
-                src="/img/new-image/ta2.jpg"
+                src="/images/tt2.jpg"
                 alt="Table tennis training"
                 fill
                 className="object-cover hover:scale-105 transition duration-700"
