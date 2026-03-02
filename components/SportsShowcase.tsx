@@ -20,8 +20,8 @@ const sports = [
     link: "/sports/badminton",
   },
   {
-    title: "Futsal",
-    image: "/images/futsal.jpg",
+    title: "Oval Ground",
+    image: "/images/futsal.jpeg",
     link: "/sports/futsal",
   },
   {

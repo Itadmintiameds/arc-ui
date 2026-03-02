@@ -8,8 +8,8 @@ const sports = [
     href: "/sports/badminton",
   },
   {
-    title: "Futsal",
-    image: "/images/sports/futsal.jpg",
+    title: "Oval Ground",
+    image: "/images/sports/futsal.jpeg",
     href: "/sports/futsal",
   },
   {
