@@ -4,62 +4,62 @@ import Link from "next/link";
 const sports = [
   {
     title: "Badminton",
-    image: "/images/sports/badminton.jpg",
+    image: "/images/badminton.jpg",
     href: "/sports/badminton",
   },
   {
     title: "Oval Ground",
-    image: "/images/sports/futsal.jpeg",
+    image: "/images/futsal.jpeg",
     href: "/sports/futsal",
   },
   {
     title: "Aqua Zone",
-    image: "/images/sports/aqua.jpg",
+    image: "/images/aqua.jpg",
     href: "/sports/aqua",
   },
   {
     title: "Zumba",
-    image: "/images/sports/zumba.jpg",
+    image: "/images/zumba2.jpg",
     href: "/sports/zumba",
   },
   {
     title: "Yoga",
-    image: "/images/sports/yoga.jpg",
+    image: "/images/yoga.jpg",
     href: "/sports/yoga",
   },
   {
     title: "Table Tennis",
-    image: "/images/sports/table-tennis.jpg",
+    image: "/images/tt1.jpg",
     href: "/sports/table-tennis",
   },
   {
     title: "Snooker",
-    image: "/images/sports/snooker.jpg",
+    image: "/images/snooker.jpg",
     href: "/sports/snooker",
   },
   {
     title: "Box Cricket",
-    image: "/images/sports/box-cricket.jpg",
+    image: "/images/futsal.jpeg",
     href: "/sports/box-cricket",
   },
   {
     title: "Martial Arts",
-    image: "/images/sports/martial-arts.jpg",
+    image: "/images/martial-art.webp",
     href: "/sports/martial-arts",
   },
   {
     title: "VR Game",
-    image: "/images/sports/vr-game.jpg",
+    image: "/images/vr.jpg",
     href: "/sports/vr-game",
   },
   {
     title: "SPA",
-    image: "/images/sports/spa.jpg",
+    image: "/images/spa.jpg",
     href: "/sports/spa",
   },
   {
     title: "Gym",
-    image: "/images/sports/gym.jpg",
+    image: "/images/gym.jpg",
     href: "/sports/gym",
   },
 ];
