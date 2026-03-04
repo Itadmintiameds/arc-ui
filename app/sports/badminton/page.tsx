@@ -142,7 +142,7 @@ export default function BadmintonPage() {
                   "Srikanth Kidambi is the highest ranked men's singles badminton player in the world and a Padma Shri awardee.",
               },
               {
-                img: "/images/Saina-Nehwal.jpg",
+                img: "/images/saina-Nehwal.jpg",
                 text:
                   "Former world No.1 Saina Nehwal has bagged multiple Superseries titles across world championships.",
               },
