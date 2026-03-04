@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Best Summer Camp in Mysore 2026 | ARC SportZone",
   description:
     "Join the best summer camp in Mysore 2026 at ARC SportZone. 16+ sports, swimming, lunch & pickup drop. Limited seats. Enroll today!",
+  alternates: {
+    canonical: "https://www.arcsportzone.com/events/summer-camp",
+  },
 };
 
 export default function EventsPage() {
@@ -15,15 +18,18 @@ export default function EventsPage() {
       <section className="py-14 md:py-20 flex justify-center bg-white">
         <div className="relative inline-block">
 
-          <div className="relative bg-[#d4b24c] text-black font-bold
-                          text-sm md:text-xl lg:text-2xl
-                          px-10 md:px-20 py-3 md:py-4
-                          tracking-wide whitespace-nowrap
-                          shadow-[0_6px_18px_rgba(0,0,0,0.15)]">
+          {/* H1 for SEO */}
+          <h1
+            className="relative bg-[#d4b24c] text-black font-bold
+                       text-sm md:text-xl lg:text-2xl
+                       px-10 md:px-20 py-3 md:py-4
+                       tracking-wide whitespace-nowrap
+                       shadow-[0_6px_18px_rgba(0,0,0,0.15)]"
+          >
             Mysore’s Most Trusted and Successful Summer Camp
-          </div>
+          </h1>
 
-          {/* LEFT ribbon */}
+          {/* LEFT ribbon tail */}
           <div
             className="absolute left-[-28px] top-1/2 -translate-y-1/2
                        w-0 h-0
@@ -34,7 +40,7 @@ export default function EventsPage() {
                        border-r-[#d4b24c]"
           />
 
-          {/* RIGHT ribbon */}
+          {/* RIGHT ribbon tail */}
           <div
             className="absolute right-[-28px] top-1/2 -translate-y-1/2
                        w-0 h-0
