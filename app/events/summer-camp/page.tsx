@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -53,6 +54,8 @@ export default function EventsPage() {
         </div>
       </section>
 
+      
+
       {/* ===== EVENTS GRID ===== */}
       <section className="pb-24">
         <div className="max-w-6xl mx-auto px-4">
@@ -63,7 +66,7 @@ export default function EventsPage() {
             <div className="group">
               <div className="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
                 <Image
-                  src="/images/summer-camp-mysuru-arc-sportzone-1.png"
+                  src="/images/event1.png"
                   alt="Kids enjoying 16+ sports activities at the best summer camp in Mysore 2026 at ARC SportZone"
                   width={800}
                   height={1000}
@@ -80,7 +83,7 @@ export default function EventsPage() {
             <div className="group">
               <div className="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
                 <Image
-                  src="/images/summer-camp-mysuru-arc-sportzone-2.png"
+                  src="/images/event2.png"
                   alt="Kids enjoying 16+ sports activities at the best summer camp in Mysore 2026 at ARC SportZone"
                   width={800}
                   height={1000}
@@ -93,6 +96,37 @@ export default function EventsPage() {
             </div>
 
           </div>
+
+        </div>
+      </section>
+      {/* ===== SEO CONTENT ===== */}
+      <section className="pb-12">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+            Best Summer Camp 2026 in Mysuru for Kids – ARC SportZone
+          </h2>
+
+          <p className="text-gray-700 leading-relaxed text-lg">
+            Looking for the{" "}
+            <Link
+              href="https://arcsportzone.com/"
+              className="text-[#d4b24c] font-semibold hover:underline"
+            >
+              best summer camp in Mysuru
+            </Link>{" "}
+            for your child? Welcome to ARC SportZone Summer Camp 2026 — a
+            dynamic, fun-filled, and skill-oriented kids summer sports camp
+            designed to build confidence, fitness, and teamwork.
+          </p>
+
+          <p className="text-gray-700 leading-relaxed text-lg mt-4">
+            Summer holidays are the perfect time for children to explore new
+            activities, develop physical strength, and build social skills. At
+            ARC SportZone, we combine professional coaching, world-class sports
+            infrastructure, and a safe learning environment to deliver one of
+            the most trusted summer camps in Mysore.
+          </p>
 
         </div>
       </section>
