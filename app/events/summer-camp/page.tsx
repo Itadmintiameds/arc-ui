@@ -63,7 +63,7 @@ export default function EventsPage() {
             <div className="group">
               <div className="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
                 <Image
-                  src="/images/event1.png"
+                  src="/images/summer-camp-mysuru-arc-sportzone-1.png"
                   alt="Kids enjoying 16+ sports activities at the best summer camp in Mysore 2026 at ARC SportZone"
                   width={800}
                   height={1000}
@@ -80,7 +80,7 @@ export default function EventsPage() {
             <div className="group">
               <div className="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
                 <Image
-                  src="/images/event2.png"
+                  src="/images/summer-camp-mysuru-arc-sportzone-2.png"
                   alt="Kids enjoying 16+ sports activities at the best summer camp in Mysore 2026 at ARC SportZone"
                   width={800}
                   height={1000}
