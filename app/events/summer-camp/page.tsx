@@ -91,7 +91,7 @@ export default function EventsPage() {
               </div>
 
               <p className="text-center text-gray-700 mt-4 font-medium">
-                Kids enjoying 16+ sports and fun activities at ARC SportZone Summer Camp 2026 in Mysore.
+                Kids enjoying 16+ sports and fun activities at ARC Sportzone Summer Camp 2026 in Mysore.
               </p>
             </div>
 
