@@ -144,7 +144,7 @@ export default function Header() {
           <Link href="/packages" className="block" onClick={closeMobileMenu}>PACKAGES</Link>
           <Link href="/membership" className="block" onClick={closeMobileMenu}>MEMBERSHIP</Link>
           <Link href="/restaurants" className="block" onClick={closeMobileMenu}>RESTAURANTS</Link>
-          <Link href="/events" className="block" onClick={closeMobileMenu}>EVENTS</Link>
+          <Link href="/events/summer-camp" className="block" onClick={closeMobileMenu}>EVENTS</Link>
           <Link href="/media" className="block" onClick={closeMobileMenu}>MEDIA</Link>
           <Link href="/contact" className="block" onClick={closeMobileMenu}>CONTACT</Link>
         </div>

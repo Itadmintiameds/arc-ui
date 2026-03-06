@@ -75,7 +75,7 @@ export default function EventsPage() {
               </div>
 
               <p className="text-center text-gray-700 mt-4 font-medium">
-                Kids enjoying 16+ sports and fun activities at ARC SportZone Summer Camp 2026 in Mysore.
+                Kids enjoying 16+ sports and fun activities at ARC Sportzone Summer Camp 2026 in Mysore.
               </p>
             </div>
 
@@ -104,7 +104,7 @@ export default function EventsPage() {
         <div className="max-w-4xl mx-auto px-4 text-center">
 
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-            Best Summer Camp 2026 in Mysuru for Kids – ARC SportZone
+            Best Summer Camp 2026 in Mysuru for Kids – ARC Sportzone
           </h2>
 
           <p className="text-gray-700 leading-relaxed text-lg">
@@ -115,7 +115,7 @@ export default function EventsPage() {
             >
               best summer camp in Mysuru
             </Link>{" "}
-            for your child? Welcome to ARC SportZone Summer Camp 2026 — a
+            for your child? Welcome to ARC Sportzone Summer Camp 2026 — a
             dynamic, fun-filled, and skill-oriented kids summer sports camp
             designed to build confidence, fitness, and teamwork.
           </p>
@@ -123,7 +123,7 @@ export default function EventsPage() {
           <p className="text-gray-700 leading-relaxed text-lg mt-4">
             Summer holidays are the perfect time for children to explore new
             activities, develop physical strength, and build social skills. At
-            ARC SportZone, we combine professional coaching, world-class sports
+            ARC Sportzone, we combine professional coaching, world-class sports
             infrastructure, and a safe learning environment to deliver one of
             the most trusted summer camps in Mysore.
           </p>
