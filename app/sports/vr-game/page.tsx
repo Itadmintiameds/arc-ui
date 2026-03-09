@@ -78,7 +78,7 @@ export default function VRGamePage() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="relative h-[260px] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
               <Image
-                src="/img/new-image/v1.jpg"
+                src="/images/vr1.jfif"
                 alt="VR gaming experience"
                 fill
                 className="object-cover hover:scale-105 transition duration-700"
@@ -87,7 +87,7 @@ export default function VRGamePage() {
 
             <div className="relative h-[260px] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
               <Image
-                src="/img/new-image/v2.png"
+                src="/images/vr2.jfif"
                 alt="Virtual reality setup"
                 fill
                 className="object-cover hover:scale-105 transition duration-700"
@@ -96,7 +96,7 @@ export default function VRGamePage() {
 
             <div className="relative h-[260px] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
               <Image
-                src="/img/new-image/v3.jpg"
+                src="/images/vr3.jfif"
                 alt="VR gaming zone"
                 fill
                 className="object-cover hover:scale-105 transition duration-700"
