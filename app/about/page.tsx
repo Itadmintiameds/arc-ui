@@ -105,13 +105,13 @@ export default function AboutPage() {
       {/* ===== VISION & MISSION ===== */}
       <section className="relative py-28 overflow-hidden">
         <div className="absolute inset-0">
-          <Image
+          {/* <Image
             src="/images/sports-bg2.jpg"
             alt="ARC Vision Background"
             fill
             sizes="100vw"
             className="object-cover"
-          />
+          /> */}
         </div>
 
         <div className="absolute inset-0 bg-black/70" />
