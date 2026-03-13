@@ -81,9 +81,9 @@ export default function Header() {
             <DropLink href="/sports/snooker">Snooker</DropLink>
             <DropLink href="/sports/box-cricket">Box Cricket</DropLink>
             <DropLink href="/sports/martial-arts">Martial Arts</DropLink>
-            <DropLink href="/sports/vr-game">VR Game</DropLink>
+            {/* <DropLink href="/sports/vr-game">VR Game</DropLink> */}
 
-            <div className="relative group/sub">
+            {/* <div className="relative group/sub">
               <div className="px-4 py-2 flex justify-between items-center cursor-pointer hover:bg-gray-50">
                 Cross Fitness
                 <span className="text-xs">▶</span>
@@ -97,7 +97,7 @@ export default function Header() {
                   <DropLink href="/sports/gym">GYM</DropLink>
                 </div>
               </div>
-            </div>
+            </div> */}
           </Dropdown>
 
           <Dropdown title="PACKAGES" active={isActive("/packages")}>
