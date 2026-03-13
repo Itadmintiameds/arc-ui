@@ -61,7 +61,7 @@ export default function BoxCricketPage() {
               has gained immense popularity among both amateur and professional
               players.
             </p>
-
+ 
             <p>
               Join us at{" "}
               <span className="font-semibold text-gray-900">
