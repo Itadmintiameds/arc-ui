@@ -76,7 +76,7 @@ export default function Header() {
             <DropLink href="/sports/aqua">Aqua Zone</DropLink>  
             <DropLink href="/sports/zumba">Zumba</DropLink>
             <DropLink href="/sports/yoga">Yoga</DropLink>
-            <DropLink href="/sports/pickelball">Pickel Ball</DropLink>
+            <DropLink href="/sports/pickleball">Pickle Ball</DropLink>
             <DropLink href="/sports/table-tennis">Table Tennis</DropLink>
             <DropLink href="/sports/snooker">Snooker</DropLink>
             <DropLink href="/sports/box-cricket">Box Cricket</DropLink>

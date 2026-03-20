@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "Looking for pickleball in Mysore? Play at ARC Sportzone – one of the best pickleball courts Mysuru with professional courts, coaching, and community matches.",
   alternates: {
-    canonical: "https://www.arcsportzone.com/sports/pickelball",
+    canonical: "https://www.arcsportzone.com/sports/pickleball",
   },
 };
 
@@ -34,7 +34,7 @@ export default function PickleballPage() {
       </section>
 
       {/* CONTENT */}
-      <section className="max-w-5xl mx-auto px-4 py-10 leading-relaxed">
+      <section className="max-w-5xl mx-auto px-4 py-10 leading-relaxed text-justify">
 
         <h2 className="text-2xl font-bold mt-6 mb-2">
           Where to Play Pickleball in Mysore
@@ -57,8 +57,8 @@ export default function PickleballPage() {
         </h2>
 
         <p className="mb-4">
-          Pickleball is a fast-growing paddle sport that combines elements of tennis, badminton, and table tennis. The game is played using a paddle and a lightweight perforated plastic ball on a court slightly smaller than a badminton court.
-        </p>
+          <b><u><a href="https://en.wikipedia.org/wiki/Pickleball">Pickleball</a></u></b> is a fast-growing paddle sport that combines elements of tennis, badminton, and table tennis. The game is played using a paddle and a lightweight perforated plastic ball on a court slightly smaller than a badminton court.
+        </p> 
 
         <p className="mb-4">
           One of the major reasons behind the popularity of Pickleball in Mysore is the simplicity of the sport. Players can learn the basics quickly and start enjoying games within a short time.
@@ -154,7 +154,7 @@ export default function PickleballPage() {
 </h3>
 
 <p className="mb-4">
-  ARC Sportzone pickleball courts are widely considered among the best pickleball courts Mysuru, offering a professional playing experience for beginners and experienced players.
+  ARC Sportzone pickleball courts are widely considered among the <u><a href="https://www.arcsportzone.com/">best pickleball courts Mysuru</a></u> best pickleball courts Mysuru, offering a professional playing experience for beginners and experienced players.
 </p>
 
 <p className="font-semibold mb-2">The facility offers:</p>
