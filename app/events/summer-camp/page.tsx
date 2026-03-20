@@ -131,14 +131,16 @@ export default function EventsPage() {
         </div>
 <br>
 </br>
-        {/* BOOK COURT CTA */}
-<div className="flex justify-center py-10">
-  <Link
-    href="/contact"
-    className="bg-red-600 hover:bg-red-700 text-white text-lg font-semibold px-10 py-4 rounded-2xl shadow-md transition-all duration-300 hover:scale-105"
+
+       <div className="flex justify-center">
+  <a
+    href="https://docs.google.com/forms/d/e/1FAIpQLSeJVmTqpeAYmcDggG7xSCq441dKBDY0m4hL5BrHyrmfnPi4hQ/viewform?usp=sharing&ouid=103322062281683898471"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300 shadow-lg hover:shadow-2xl"
   >
-    Enroll now
-  </Link>
+    Enquire Now
+  </a>
 </div>
       </section>
 

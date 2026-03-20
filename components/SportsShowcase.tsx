@@ -13,7 +13,7 @@ const sports = [
   { title: "Badminton", image: "/images/badminton.jpg", link: "/sports/badminton" },
   { title: "Oval Ground", image: "/images/futsal.jpeg", link: "/sports/futsal" },
   { title: "Aqua Zone", image: "/images/aqua.jpg", link: "/sports/aqua" },
-  { title: "Gym", image: "/images/gym.jpg", link: "/sports/gym" },
+  { title: "Pickle Ball", image: "/images/pickleball-equipment-blue-court-with-net.jpeg", link: "/sports/pickleball" },
 ];
 
 export default function SportsShowcase() {

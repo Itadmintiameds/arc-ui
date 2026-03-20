@@ -81,6 +81,7 @@ export default function Header() {
             <DropLink href="/sports/snooker">Snooker</DropLink>
             <DropLink href="/sports/box-cricket">Box Cricket</DropLink>
             <DropLink href="/sports/martial-arts">Martial Arts</DropLink>
+            <DropLink href="/sports">Available sports</DropLink>
             {/* <DropLink href="/sports/vr-game">VR Game</DropLink> */}
 
             {/* <div className="relative group/sub">

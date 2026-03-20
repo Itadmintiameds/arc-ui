@@ -48,19 +48,9 @@ const sports = [
     href: "/sports/martial-arts",
   },
   {
-    title: "VR Game",
-    image: "/images/vr.jpg",
-    href: "/sports/vr-game",
-  },
-  {
-    title: "SPA",
-    image: "/images/spa.jpg",
-    href: "/sports/spa",
-  },
-  {
-    title: "Gym",
-    image: "/images/gym.jpg",
-    href: "/sports/gym",
+    title: "Pickleball",
+    image: "/images/pickleball-equipment-blue-court-with-net.jpeg",
+    href: "/sports/pickleball",
   },
 ];
 
