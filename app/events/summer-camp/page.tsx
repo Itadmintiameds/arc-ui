@@ -129,6 +129,16 @@ export default function EventsPage() {
           </p>
 
         </div>
+
+        {/* BOOK COURT CTA */}
+<div className="flex justify-center py-10">
+  <Link
+    href="/contact"
+    className="bg-red-600 hover:bg-red-700 text-white text-lg font-semibold px-10 py-4 rounded-2xl shadow-md transition-all duration-300 hover:scale-105"
+  >
+    Book Court
+  </Link>
+</div>
       </section>
 
     </main>

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "Looking for pickleball in Mysore? Play at ARC Sportzone – one of the best pickleball courts Mysuru with professional courts, coaching, and community matches.",
   alternates: {
-    canonical: "https://www.arcsportzone.com/pickleball-in-mysore",
+    canonical: "https://www.arcsportzone.com/sports/pickelball",
   },
 };
 
@@ -64,9 +64,9 @@ export default function PickleballPage() {
           One of the major reasons behind the popularity of Pickleball in Mysore is the simplicity of the sport. Players can learn the basics quickly and start enjoying games within a short time.
         </p>
 
-        <h3 className="text-xl font-semibold mt-6 mb-1">
+        <b className="text-xl font-semibold mt-6 mb-1">
           Key Features of Pickleball
-        </h3>
+        </b>
 
         <ul className="list-disc pl-6 mb-4 space-y-1">
           <li>Easy to learn for beginners</li>
@@ -88,9 +88,9 @@ export default function PickleballPage() {
           The popularity of Pickleball in Mysore has increased significantly over the past few years. Many players are discovering the sport through sports clubs, social media, and modern sports facilities like ARC Sportzone pickleball courts.
         </p>
 
-        <h3 className="text-xl font-semibold mt-6 mb-1">
+        <b className="text-xl font-semibold mt-6 mb-1">
           Easy to Learn
-        </h3>
+        </b>
 
         <p className="mb-4">
           Unlike many sports that require months of practice, pickleball can be learned quickly. Most beginners can understand the basic rules in just a few sessions.
@@ -204,9 +204,9 @@ export default function PickleballPage() {
   The pickleball courts Mysore at ARC Sportzone are built using high-quality materials to ensure durability and performance.
 </p>
 
-<h3 className="text-xl font-semibold mt-6 mb-1">
+<b className="text-xl font-semibold mt-6 mb-1">
   Court Construction
-</h3>
+</b>
 
 <ul className="list-disc pl-6 mb-4 space-y-1">
   <li>2.5 mm material thickness for a professional playing surface</li>
@@ -219,9 +219,9 @@ export default function PickleballPage() {
   The courts are coated with flexible acrylic paint layers mixed with sand to improve grip and ball control.
 </p>
 
-<h3 className="text-xl font-semibold mt-6 mb-1">
+<b className="text-xl font-semibold mt-6 mb-1">
   Professional Pickleball Equipment
-</h3>
+</b>
 
 <ul className="list-disc pl-6 mb-4 space-y-1">
   <li>Paddles made with T700 & T900 Japanese carbon fiber</li>
@@ -229,28 +229,50 @@ export default function PickleballPage() {
 </ul>
 
 {/* COURT IMAGE RIGHT SIDE LAYOUT */}
-<div className="flex flex-col lg:flex-row items-center gap-10 my-10">
+<div className="flex flex-col lg:flex-row items-start gap-6 my-6">
   
   {/* LEFT SIDE CONTENT */}
-  <div className="lg:w-1/2">
-    <h3 className="text-xl font-semibold mb-4">
+  <div className="lg:w-1/2 space-y-3">
+
+    <b className="text-xl font-semibold">
+      Professional Pickleball Equipment
+    </b>
+
+    <ul className="list-disc pl-6 space-y-1">
+      <li>Paddles made with T700 & T900 Japanese carbon fiber</li>
+      <li>Designed for better control and durability</li>
+    </ul>
+
+    <b className="text-xl font-semibold">
       Professional Pickleball Courts at ARC Sportzone
-    </h3>
-    <p className="mb-4">
+    </b>
+
+    <p>
       Experience international-standard pickleball courts in Mysore with
       premium flooring, excellent grip, and professional gameplay feel.
       Designed for both beginners and advanced players.
     </p>
+
+    <b className="text-xl font-semibold">
+      High Performance Pickleball Balls
+    </b>
+
+    <ul className="list-disc pl-6 space-y-1">
+      <li>Single-piece rotational molded construction</li>
+      <li>40-hole design for consistent bounce</li>
+      <li>Suitable for all-weather play</li>
+    </ul>
+
   </div>
 
   {/* RIGHT SIDE IMAGE */}
-  <div className="lg:w-1/2 flex justify-end">
+  <div className="lg:w-1/2">
     <Image
       src="/images/pickleball-equipment-blue-court-with-net.jpeg"
       alt="Professional Pickleball Court at ARC Sportzone Mysore"
       width={800}
-      height={436}   // maintains original ratio (6000x3273 ≈ 1.83)
-      className="rounded-xl shadow-lg object-contain"
+      height={436}
+      className="rounded-xl shadow-lg w-full h-auto"
     />
   </div>
 
@@ -288,9 +310,9 @@ export default function PickleballPage() {
   For beginners, joining Pickleball coaching Mysore programs can greatly improve learning speed and gameplay.
 </p>
 
-<h3 className="text-xl font-semibold mt-6 mb-1">
+<b className="text-xl font-semibold mt-6 mb-1">
   What You Learn in Pickleball Coaching
-</h3>
+</b>
 
 <ul className="list-disc pl-6 mb-4 space-y-1">
   <li>Basic pickleball rules</li>
@@ -300,9 +322,9 @@ export default function PickleballPage() {
   <li>Doubles match strategies</li>
 </ul>
 
-<h3 className="text-xl font-semibold mt-6 mb-1">
+<b className="text-xl font-semibold mt-6 mb-1">
   Coaching at ARC Sportzone
-</h3>
+</b>
 
 <p className="mb-4">
   The ARC Sportzone pickleball coaching program is designed for beginners and intermediate players who want to improve their skills and game strategies.
@@ -445,6 +467,157 @@ export default function PickleballPage() {
           }`,
         }}
       />
+
+      {/* ADDITIONAL SCHEMAS */}
+
+{/* SportsActivityLocation */}
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: `{
+      "@context": "https://schema.org",
+      "@type": "SportsActivityLocation",
+      "@id": "https://www.arcsportzone.com/sports/pickelball#sportslocation",
+      "name": "ARC Sportzone - Pickleball Courts in Mysore",
+      "description": "Play pickleball in Mysore at ARC Sportzone with professional courts, coaching, and community matches.",
+      "url": "https://www.arcsportzone.com/sports/pickelball",
+      "telephone": "+91 89519 50916",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "#440/D, Hebbal Industrial Area, Behind Shubodini Convention Hall",
+        "addressLocality": "Mysuru",
+        "postalCode": "570016",
+        "addressRegion": "KA",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "12.3251",
+        "longitude": "76.6143"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "06:00",
+        "closes": "23:00"
+      }
+    }`,
+  }}
+/>
+
+{/* LocalBusiness */}
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: `{
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://www.arcsportzone.com/#localbusiness",
+      "name": "ARC Sportzone",
+      "image": "https://www.arcsportzone.com/logo.png",
+      "url": "https://www.arcsportzone.com/",
+      "telephone": "+91 89519 50916",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "#440/D, Hebbal Industrial Area, Behind Shubodini Convention Hall",
+        "addressLocality": "Mysuru",
+        "postalCode": "570016",
+        "addressRegion": "KA",
+        "addressCountry": "IN"
+      },
+      "priceRange": "₹₹",
+      "areaServed": "Mysuru"
+    }`,
+  }}
+/>
+
+{/* WebPage */}
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: `{
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.arcsportzone.com/sports/pickelball",
+      "url": "https://www.arcsportzone.com/sports/pickelball",
+      "name": "Best Pickleball Courts in Mysore | ARC Sportzone",
+      "description": "Looking for pickleball in Mysore? Play at ARC Sportzone with professional courts, coaching, and community matches.",
+      "inLanguage": "en",
+      "about": {
+        "@type": "Thing",
+        "name": "Pickleball in Mysore"
+      },
+      "mentions": [
+        {
+          "@type": "SportsActivityLocation",
+          "name": "Pickleball Courts in Mysuru"
+        },
+        {
+          "@type": "Place",
+          "name": "Mysore"
+        }
+      ],
+      "primaryEntity": {
+        "@type": "SportsActivityLocation",
+        "name": "ARC Sportzone"
+      }
+    }`,
+  }}
+/>
+
+{/* Service */}
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: `{
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Pickleball Court Booking in Mysore",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "ARC Sportzone"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Mysuru"
+      },
+      "serviceType": "Pickleball Court Rental, Coaching, Matches",
+      "description": "Book professional pickleball courts in Mysore at ARC Sportzone. Coaching and community matches available.",
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceLocation": {
+          "@type": "Place",
+          "name": "ARC Sportzone",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mysuru",
+            "addressRegion": "KA",
+            "addressCountry": "IN"
+          }
+        }
+      }
+    }`,
+  }}
+/>
+
+{/* Speakable */}
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: `{
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "xpath": [
+          "/html/body//h1",
+          "/html/body//p[1]",
+          "/html/body//p[2]"
+        ]
+      }
+    }`,
+  }}
+/>
     </main>
   );
 }
