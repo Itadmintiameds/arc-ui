@@ -72,7 +72,7 @@ export default function Header() {
 
           <Dropdown title="SPORTS" active={isActive("/sports")}>
             <DropLink href="/sports/badminton">Badminton</DropLink>
-            <DropLink href="/sports/futsal">Futsal</DropLink>
+            <DropLink href="/sports/ovalground">Oval Ground</DropLink>
             <DropLink href="/sports/aqua">Aqua Zone</DropLink>  
             <DropLink href="/sports/zumba">Zumba</DropLink>
             <DropLink href="/sports/yoga">Yoga</DropLink>

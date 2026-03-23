@@ -10,7 +10,7 @@ const sports = [
   {
     title: "Oval Ground",
     image: "/images/futsal.jpeg",
-    href: "/sports/futsal",
+    href: "/sports/ovalground",
   },
   {
     title: "Aqua Zone",
