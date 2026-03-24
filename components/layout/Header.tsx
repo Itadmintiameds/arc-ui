@@ -9,28 +9,23 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
 
-  // 🔥 Active checker (parent aware)
   const isActive = (path: string) => {
     if (path === "/") return pathname === "/";
     return pathname.startsWith(path);
   };
 
-  // ✅ close mobile helper
   const closeMobileMenu = () => setMobileOpen(false);
 
-  // 🔥 Sticky effect
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // ✅ PRO: auto-close on route change
   useEffect(() => {
     setMobileOpen(false);
   }, [pathname]);
 
-  // 🔥 Nav style
   const navStyle = (path: string) =>
     `relative px-1 py-2 transition-all duration-300
      ${
@@ -82,23 +77,6 @@ export default function Header() {
             <DropLink href="/sports/box-cricket">Box Cricket</DropLink>
             <DropLink href="/sports/martial-arts">Martial Arts</DropLink>
             <DropLink href="/sports">Available sports</DropLink>
-            {/* <DropLink href="/sports/vr-game">VR Game</DropLink> */}
-
-            {/* <div className="relative group/sub">
-              <div className="px-4 py-2 flex justify-between items-center cursor-pointer hover:bg-gray-50">
-                Cross Fitness
-                <span className="text-xs">▶</span>
-              </div>
-
-              <div className="absolute left-full top-0 ml-2 opacity-0 invisible
-                              group-hover/sub:opacity-100 group-hover/sub:visible
-                              transition-all duration-300">
-                <div className="w-44 bg-white rounded-xl shadow-2xl py-2 border border-gray-100">
-                  <DropLink href="/sports/spa">SPA</DropLink>
-                  <DropLink href="/sports/gym">GYM</DropLink>
-                </div>
-              </div>
-            </div> */}
           </Dropdown>
 
           <Dropdown title="PACKAGES" active={isActive("/packages")}>
@@ -153,7 +131,7 @@ export default function Header() {
       )}
     </header>
   );
-}
+}                               
 
 /* ===================================================== */
 /* 🔥 PREMIUM DROPDOWN */
@@ -187,10 +165,6 @@ function Dropdown({ title, children, active }: any) {
   );
 }
 
-/* ===================================================== */
-/* 🔥 DROPLINK */
-/* ===================================================== */
-
 function DropLink({ href, children }: any) {
   return (
     <Link
@@ -201,4 +175,4 @@ function DropLink({ href, children }: any) {
       {children}
     </Link>
   );
-}  
+}
