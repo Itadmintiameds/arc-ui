@@ -94,65 +94,89 @@ export default function OvalGroundPage() {
         </motion.div>
       </section>
 
-      {/* FOOTBALL */}
-      <section id="football" className="py-20 px-6">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+{/* FOOTBALL */}
+<section id="football" className="py-20 px-6">
+  <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-stretch">
 
-          <motion.div
-            style={{ y: imageY }}
-            variants={fadeLeft}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: false, amount: 0.2 }}
-            transition={{ duration: 0.7 }}
-            className="relative w-full h-[350px] md:h-[450px] rounded-3xl overflow-hidden shadow-xl"
-          >
-            <Image src="/images/hero3.jpeg" alt="Football" fill className="object-cover" />
-          </motion.div>
+    {/* IMAGE */}
+    <motion.div
+      style={{ y: imageY }}
+      variants={fadeLeft}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.2 }}
+      transition={{ duration: 0.7 }}
+      className="relative w-full aspect-[4/3] md:aspect-auto md:h-full rounded-3xl overflow-hidden shadow-xl"
+    >
+      <Image
+        src="/images/futsal.jpeg"
+        alt="Football"
+        fill
+        className="object-cover"
+      />
+    </motion.div>
 
-          <motion.div
-            variants={fadeRight}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: false, amount: 0.2 }}
-            transition={{ duration: 0.7 }}
-          >
-            <h2 className="text-3xl font-bold mb-4 text-red-600">
-  Why ARC Sportzone is the Best Turf in Mysuru
-</h2>
+    {/* TEXT */}
+    <motion.div
+      variants={fadeRight}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.2 }}
+      transition={{ duration: 0.7 }}
+      className="flex flex-col justify-center"
+    >
+      <br>
+  </br>
+  <br>
+  </br><br>
+  </br><br>
+  </br><br>
+  </br>
+      <h2 className="text-3xl font-bold mb-4 text-red-600">
+        Why ARC Sportzone is the Best Turf in Mysuru
+      </h2>
 
-<p className="text-gray-600 mb-6 text-lg">
-  Looking for the best cricket turf in Mysuru or a football turf near you in Mysore? ARC Sportzone stands out with:
-</p>
+      <p className="text-gray-600 mb-6 text-lg text-justify">
+        Looking for the best cricket turf in Mysuru or a football turf near you in Mysore? ARC Sportzone stands out with:
+      </p>
 
-<ul className="space-y-3 text-gray-600 list-disc pl-5 marker:text-red-600">
-  <li>Professional oval cricket ground in Mysuru</li>
-  <li>High-quality football turf in Hebbal Industrial Area Mysuru</li>
-  <li>Floodlights for night matches</li>
-  <li>Prime location in Hebbal Industrial Area, Mysuru</li>
-  <li>Easy parking & accessibility</li>
-  <li>Clean, safe & well-maintained environment</li>
-</ul>
+      <ul className="space-y-3 text-gray-600 list-disc pl-5 marker:text-red-600">
+        <li>Professional oval cricket ground in Mysuru</li>
+        <li>High-quality football turf in Hebbal Industrial Area Mysuru</li>
+        <li>Floodlights for night matches</li>
+        <li>Prime location in Hebbal Industrial Area, Mysuru</li>
+        <li>Easy parking & accessibility</li>
+        <li>Clean, safe & well-maintained environment</li>
+      </ul>
 
-<p className="text-gray-600 mt-6 text-lg">
-  We provide everything you need for an unmatched sports experience in Mysuru.
-</p>
-          </motion.div>
-        </div>
-      </section>
+      <p className="text-gray-600 mt-6 text-lg text-justify">
+        We provide everything you need for an unmatched sports experience in Mysuru.
+      </p>
+    </motion.div>
+
+  </div>
+</section>
+
+
 
       {/* CRICKET */}
       <section id="cricket" className="py-20 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
           <motion.div
-            variants={fadeLeft}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: false, amount: 0.2 }}
-            transition={{ duration: 0.7 }}
-            className="order-2 md:order-1"
-          >
+  variants={fadeLeft}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: false, amount: 0.2 }}
+  transition={{ duration: 0.7 }}
+  className="order-2 md:order-1 flex flex-col justify-center h-full"
+>
+  <br>
+  </br><br>
+  </br><br>
+  </br><br>
+  </br><br>
+  </br>
             <h2 className="text-3xl font-bold mb-4 text-red-600">
   Perfect for Matches, Practice & Events
 </h2>
@@ -186,6 +210,65 @@ export default function OvalGroundPage() {
           </motion.div>
         </div>
       </section>
+
+
+
+
+{/* INFOGRAPHIC SECTION */}
+<section className="py-16 px-6 bg-[#f5f7fb]">
+  <div className="max-w-6xl mx-auto">
+
+    {/* TITLE */}
+    <h2 className="text-center text-3xl md:text-4xl font-extrabold mb-10 bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent">
+      Premium Cricket & Football Turf in Mysuru
+    </h2>
+
+    {/* GRID */}
+    <div className="grid md:grid-cols-2 gap-6">
+
+      {/* CRICKET CARD */}
+      <div className="rounded-2xl p-6 text-white shadow-lg transition-transform duration-300 hover:-translate-y-2 bg-gradient-to-br from-red-600 to-red-900">
+        <h3 className="text-xl font-semibold mb-4">
+          Cricket Turf in Mysuru
+        </h3>
+
+        <ul className="space-y-3">
+          <li className="relative pl-5 before:content-['✔'] before:absolute before:left-0">
+            Ideal for friendly matches & tournaments
+          </li>
+          <li className="relative pl-5 before:content-['✔'] before:absolute before:left-0">
+            Perfect for regular practice sessions
+          </li>
+          <li className="relative pl-5 before:content-['✔'] before:absolute before:left-0">
+            Designed with a professional oval layout
+          </li>
+        </ul>
+      </div>
+
+      {/* FOOTBALL CARD */}
+      <div className="rounded-2xl p-6 text-white shadow-lg transition-transform duration-300 hover:-translate-y-2 bg-gradient-to-br from-blue-600 to-blue-900">
+        <h3 className="text-xl font-semibold mb-4">
+          Football Turf in Mysuru
+        </h3>
+
+        <ul className="space-y-3">
+          <li className="relative pl-5 before:content-['✔'] before:absolute before:left-0">
+            Smooth and high-performance playing surface
+          </li>
+          <li className="relative pl-5 before:content-['✔'] before:absolute before:left-0">
+            Great for 5v5 & 7v7 matches
+          </li>
+          <li className="relative pl-5 before:content-['✔'] before:absolute before:left-0">
+            Suitable for beginners & advanced players
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
 
 
 {/* FEATURES / DETAILS BLOCK */}
@@ -281,6 +364,7 @@ export default function OvalGroundPage() {
 
   </div>
 </section>
+
 
 
 
@@ -435,3 +519,119 @@ export default function OvalGroundPage() {
     </main>
   );
 }
+{/* SCHEMA MARKUP */}
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify([
+      {
+        "@context": "https://schema.org",
+        "@type": "SportsActivityLocation",
+        name: "ARC Sportzone",
+        description:
+          "Professional oval cricket ground and football turf in Hebbal Industrial Area, Mysuru. Ideal for matches, practice, and tournaments.",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Mysuru",
+          addressRegion: "Karnataka",
+          postalCode: "570016",
+          addressCountry: "IN",
+        },
+        areaServed: "Mysuru",
+        sport: ["Cricket", "Football"],
+        amenityFeature: [
+          {
+            "@type": "LocationFeatureSpecification",
+            name: "Floodlights",
+            value: true,
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            name: "Parking",
+            value: true,
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            name: "Seating Area",
+            value: true,
+          },
+        ],
+        url: "https://www.arcsportzone.com/",
+        telephone: "+91-8951950916",
+        priceRange: "₹₹",
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: "Cricket & Football Turf Booking in Mysuru",
+        provider: {
+          "@type": "SportsActivityLocation",
+          name: "ARC Sportzone",
+        },
+        areaServed: {
+          "@type": "Place",
+          name: "Mysuru",
+        },
+        serviceType: [
+          "Cricket Turf Booking",
+          "Football Turf Booking",
+          "Tournament Hosting",
+          "Practice Sessions",
+        ],
+        availableChannel: {
+          "@type": "ServiceChannel",
+          serviceLocation: {
+            "@type": "Place",
+            name: "Hebbal Industrial Area, Mysuru",
+          },
+        },
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "Which is the best cricket turf in Mysuru?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "ARC Sportzone is one of the best cricket turfs in Mysuru with a professional oval ground and premium facilities.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Do you offer football turf booking in Mysuru?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes, ARC Sportzone provides football turf booking for matches, practice sessions, and tournaments.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Where is ARC Sportzone located?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "ARC Sportzone is located in Hebbal Industrial Area, Mysuru with easy access from major areas.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Is night play available?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes, floodlights are available for night cricket and football matches.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How can I book the turf?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "You can call +91-8951950916 or visit ARC Sportzone to book your slot.",
+            },
+          },
+        ],
+      },
+    ]),
+  }}
+/>
