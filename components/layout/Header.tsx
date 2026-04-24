@@ -44,7 +44,7 @@ export default function Header() {
           ? "bg-red-700/90 backdrop-blur-xl shadow-[0_8px_30px_rgba(0,0,0,0.25)] py-2"
           : "bg-red-600 py-3"
       } text-white`}
-    >
+    >  
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
         
         {/* ✅ Logo */}

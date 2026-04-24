@@ -1,4 +1,5 @@
 "use client";
+import Head from "next/head";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -28,6 +29,23 @@ export default function OvalGroundPage() {
   };
 
   return (
+  <>
+    <Head>
+      <title>
+        Mysuru’s First Oval Cricket & Football Turf | ARC Sportzone
+      </title>
+
+      <meta
+        name="description"
+        content="Play at Mysuru’s top oval cricket & football turf in Hebbal. Floodlights, pro surface & easy booking for matches, practice & tournaments."
+      />
+
+      <link
+        rel="canonical"
+        href="https://www.arcsportzone.com/oval-ground"
+      />
+    </Head>
+
     <main className="bg-white text-black">
 
       {/* HERO */}
@@ -516,9 +534,7 @@ export default function OvalGroundPage() {
   </div>
 </section>
 
-    </main>
-  );
-}
+
 {/* SCHEMA MARKUP */}
 <script
   type="application/ld+json"
@@ -635,3 +651,124 @@ export default function OvalGroundPage() {
     ]),
   }}
 />
+
+{/* SCHEMA MARKUP */}
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify([
+      {
+        "@context": "https://schema.org",
+        "@type": "SportsActivityLocation",
+        name: "ARC Sportzone",
+        description:
+          "Professional oval cricket ground and football turf in Hebbal Industrial Area, Mysuru. Ideal for matches, practice, and tournaments.",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Mysuru",
+          addressRegion: "Karnataka",
+          postalCode: "570016",
+          addressCountry: "IN",
+        },
+        areaServed: "Mysuru",
+        sport: ["Cricket", "Football"],
+        amenityFeature: [
+          {
+            "@type": "LocationFeatureSpecification",
+            name: "Floodlights",
+            value: true,
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            name: "Parking",
+            value: true,
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            name: "Seating Area",
+            value: true,
+          },
+        ],
+        url: "https://www.arcsportzone.com/",
+        telephone: "+91-8951950916",
+        priceRange: "₹₹",
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: "Cricket & Football Turf Booking in Mysuru",
+        provider: {
+          "@type": "SportsActivityLocation",
+          name: "ARC Sportzone",
+        },
+        areaServed: {
+          "@type": "Place",
+          name: "Mysuru",
+        },
+        serviceType: [
+          "Cricket Turf Booking",
+          "Football Turf Booking",
+          "Tournament Hosting",
+          "Practice Sessions",
+        ],
+        availableChannel: {
+          "@type": "ServiceChannel",
+          serviceLocation: {
+            "@type": "Place",
+            name: "Hebbal Industrial Area, Mysuru",
+          },
+        },
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "Which is the best cricket turf in Mysuru?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "ARC Sportzone is one of the best cricket turfs in Mysuru with a professional oval ground and premium facilities.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Do you offer football turf booking in Mysuru?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes, ARC Sportzone provides football turf booking for matches, practice sessions, and tournaments.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Where is ARC Sportzone located?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "ARC Sportzone is located in Hebbal Industrial Area, Mysuru with easy access from major areas.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Is night play available?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes, floodlights are available for night cricket and football matches.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How can I book the turf?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "You can call +91-8951950916 or visit ARC Sportzone to book your slot.",
+            },
+          },
+        ],
+      },
+    ]),
+  }}
+/>
+   </main>
+</>
+);
+}

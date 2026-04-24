@@ -58,7 +58,7 @@ export default function TableTennisPage() {
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
             At{" "}
             <span className="font-semibold text-gray-900">
-              ARC Sportzone
+              ARC Sportzone   
             </span>
             , we provide top-notch Table Tennis facilities for players of all
             levels. Whether you are a beginner learning the basics or an
@@ -71,7 +71,7 @@ export default function TableTennisPage() {
             while improving your agility, speed, and precision. Get ready to
             play, compete, and have fun with one of the most engaging indoor
             sports!
-          </p>
+          </p>  
         </div>
       </section>
 
