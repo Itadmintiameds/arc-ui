@@ -14,7 +14,7 @@ export default function AnalyticsTracker() {
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    if (!window.gtag) return;
+    if (typeof window === "undefined" || !window.gtag) return;
 
     const url =
       pathname + (searchParams.toString() ? `?${searchParams}` : "");
