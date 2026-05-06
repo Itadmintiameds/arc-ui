@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 declare global {
   interface Window {
@@ -11,18 +11,14 @@ declare global {
 
 export default function AnalyticsTracker() {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
 
   useEffect(() => {
-    if (typeof window === "undefined" || !window.gtag) return;
-
-    const url =
-      pathname + (searchParams.toString() ? `?${searchParams}` : "");
+    if (!window.gtag) return;
 
     window.gtag("config", "G-WHHCGHDLEK", {
-      page_path: url,
+      page_path: pathname,
     });
-  }, [pathname, searchParams]);
+  }, [pathname]);
 
   return null;
 }
