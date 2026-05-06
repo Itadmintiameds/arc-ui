@@ -3,6 +3,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import type { Metadata } from "next";
 import Script from "next/script";
+import AnalyticsTracker from "@/components/AnalyticsTracker";
 
 export const metadata: Metadata = {
   title: "ARC Sportzone",
@@ -54,6 +55,7 @@ export default function RootLayout({
       </head>
 
       <body>
+        <AnalyticsTracker />
         <Header />
         {children}
         <Footer />
