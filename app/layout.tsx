@@ -12,7 +12,11 @@ export const metadata: Metadata = {
       { url: "/favicon.ico" },
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
+      {
+        url: "/android-chrome-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
     ],
     apple: "/apple-touch-icon.png",
   },
@@ -28,33 +32,25 @@ export default function RootLayout({
       <head>
         {/* Google Ads Global Site Tag */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-1695517647"
+          src="https://www.googletagmanager.com/gtag/js?id=G-WHHCGHDLEK"
           strategy="afterInteractive"
         />
 
-        <Script id="google-ads" strategy="afterInteractive">
+        <Script id="gtag-base" strategy="afterInteractive">
           {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'AW-1695517647');
-          `}
-        </Script>
-
-        <Script
-  src="https://www.googletagmanager.com/gtag/js?id=G-WHHCGHDLEK"
-  strategy="afterInteractive"
-/>
-
-<Script id="google-analytics" strategy="afterInteractive">
-  {`
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+
     gtag('js', new Date());
+
+    // Google Analytics
     gtag('config', 'G-WHHCGHDLEK');
+
+    // Google Ads
+    gtag('config', 'AW-1695517647');
   `}
-</Script>
+        </Script>
       </head>
 
       <body>
